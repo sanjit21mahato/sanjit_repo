@@ -1,6 +1,6 @@
 package difficult;
-Solutions: 
-	Two soultion
+/*Solutions: 
+	Two soultion*/
 
 public class CloneALinkedListWithRandomConnections_37 {
 
