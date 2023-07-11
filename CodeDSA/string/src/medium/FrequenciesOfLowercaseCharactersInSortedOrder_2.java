@@ -47,6 +47,7 @@ public class FrequenciesOfLowercaseCharactersInSortedOrder_2 {
 		}
 	}
 
+	
 	private static void printFreqInSortedOrderUsingTreeMap(String str) {
       Map<Character, Integer> map = new TreeMap<>();
       
