@@ -1,4 +1,4 @@
-package difficult;
+package medium;
 
 /*
  * Find the index or character of left most repeating 
@@ -18,13 +18,13 @@ public class LeftMostRepeatingCharacter_3 {
 	}
 
 	private static int findLeftMostRepeatingCharacter(String s1) {
-       int count[] = new int[26];
+       int freq[] = new int[26];
        for(int i=0;i<s1.length();i++){
-    	   count[s1.charAt(i)-'a']++;
+    	   freq[s1.charAt(i)-'a']++;
        }
        int i;
 	   for(i=0; i<s1.length();i++){
-		 if(count[s1.charAt(i)-'a']>1){
+		 if(freq[s1.charAt(i)-'a']>1){
 			 break;
 		 }
 	   }

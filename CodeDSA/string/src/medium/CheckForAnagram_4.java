@@ -1,4 +1,4 @@
-package difficult;
+package medium;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -52,6 +52,19 @@ public class CheckForAnagram_4 {
 		if (s1.length() != s2.length()) {
 			return false;
 		}
+		/*int freq1[] = new int[26];
+		int freq2[] = new int[26];
+		for(int i=0;i<s1.length();i++){
+			freq1[s1.charAt(i)-'a']++;
+		}
+		for(int j=0;j<s2.length();j++){
+			freq2[s2.charAt(j)-'a']++;
+		}
+		for(int i=0;i<freq1.length;i++){
+			if(freq1[i]!=freq2[i]){
+				return false;
+			}
+		}*/
 		int count[] = new int[256];
 		for (int i = 0, j = 0; i < s1.length() && j < s2.length();) {
 			count[s1.charAt(i)]++;

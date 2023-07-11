@@ -1,4 +1,4 @@
-package basics;
+package easy;
 
 public class FacedDifficulity {
 	

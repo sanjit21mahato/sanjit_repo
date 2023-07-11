@@ -9,7 +9,6 @@ O/P : true
 I/P : s1 = "ABCDE"
       s2 ="AED"
 
-      
 O/P:false*
 
 If there are n characters then total subsequences would be 2 to power n

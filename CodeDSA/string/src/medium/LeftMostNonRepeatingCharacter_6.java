@@ -1,4 +1,4 @@
-package difficult;
+package medium;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

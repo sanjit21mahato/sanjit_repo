@@ -1,4 +1,4 @@
-package difficult;
+package medium;
 
 /*
 I/P : "You love coding";
@@ -19,10 +19,9 @@ public class ReverseWordsInString_7 {
 
 	public static void main(String[] args) {
 		String s1 = "You love coding";
-		/*String res = reverseWordsInStringWithAuxillarySpace(s1);
-		System.out.println(res);*/
+		String res = reverseWordsInStringWithAuxillarySpace(s1);
+		System.out.println(res);
 		reverseWordsInString(s1.toCharArray());
-		//System.out.println(s1);
 
 	}
     //This solutions takes auxillay space 
