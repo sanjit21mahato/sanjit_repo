@@ -1,4 +1,4 @@
-package basics;
+package easy;
 
 /*
 I/P: 1 2  3  4
@@ -6,7 +6,7 @@ I/P: 1 2  3  4
      9 10 11 12
 O/P: 1 2 3 4 8 7 6 5 9 10 11 12 */
 
-public class PrintMatrixInSnakePattern {
+public class PrintMatrixInSnakePattern_3 {
 
 	public static void main(String[] args) {
 

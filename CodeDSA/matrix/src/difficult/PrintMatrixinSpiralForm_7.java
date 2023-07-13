@@ -9,7 +9,7 @@ O/P : 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
 
 */
 
-public class PrintMatrixinSpiralForm {
+public class PrintMatrixinSpiralForm_7 {
 
 	public static void main(String[] args) {
 		int arr[][] = { { 1, 2, 3, 4 },
@@ -17,8 +17,8 @@ public class PrintMatrixinSpiralForm {
 				        { 9, 10, 11, 12 }, 
 				        {13, 14, 15, 16 } 
 				      };
-		int r =4;
-		int c = 4;
+		int r =arr.length;
+		int c = arr[0].length;
 		printInSpiralForm(arr,r, c);
 
 	}
@@ -45,15 +45,19 @@ public class PrintMatrixinSpiralForm {
     	  right--;
     	  
     	  //right to left
+    	  if(top<=bottom){
     	  for(int i =right;i>=left;i--){
     		  System.out.print(arr[bottom][i]+" ");
     	  }
     	  bottom--;
+    	  }
     	  //bottom to top
+    	  if(left<=right){
     	  for(int i=bottom; i>=top;i--){
     		  System.out.print(arr[i][left]+" ");
     	  }
     	  left++;
+    	  }
       }
      
 		
