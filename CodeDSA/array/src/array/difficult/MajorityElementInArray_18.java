@@ -34,22 +34,22 @@ public class MajorityElementInArray_18 {
 	private static int findMajorityElement(int[] arr) {
 		//1st pahse
         int n= arr.length;
-        int res = 0;
+        int resIndex = 0;
         int count =1;
         for(int i=1; i<n;i++){
-        	if(arr[res] == arr[i]){
+        	if(arr[resIndex] == arr[i]){
         		count++;
         	}else {
         		count--;
         	}
         	if(count ==0){
-        		res = i;
+        		resIndex = i;
         		count = 1;
         	}
         }
         
         //2nd Phase
-        int majorityElement = arr[res];
+        int majorityElement = arr[resIndex];
         int majorityCount =0;
         for(int i=0;i<n;i++){
         	if(arr[i] == majorityElement){
@@ -57,9 +57,9 @@ public class MajorityElementInArray_18 {
         	}
         }
         if(majorityCount<=n/2){
-        	res=-1;
+        	resIndex=-1;
         }
-		return res;
+		return resIndex;
 	}
 
 }

@@ -4,7 +4,7 @@ import java.net.ConnectException;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import basics.Node;
+import medium.Node;
 
 /*Given a binary tree, connect the nodes that are at the same level. The structure of the tree Node contains an addition nextRight pointer for this purpose.
 

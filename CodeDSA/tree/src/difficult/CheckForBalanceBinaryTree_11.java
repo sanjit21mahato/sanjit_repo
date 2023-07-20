@@ -34,11 +34,11 @@ public class CheckForBalanceBinaryTree_11 {
 		if (root == null)
 			return 0;
 		int lh = isBalancedBinaryTree(root.left);
-		/*if(lh<0)
-			return -1;*/
+		if(lh== -1)
+			return -1;
 		int rh = isBalancedBinaryTree(root.right);
-		/*if(rh<0)
-			return -1;*/
+		if(rh== -1)
+			return -1;
 		if(Math.abs(lh-rh)>1)
 			return -1;
 		else {

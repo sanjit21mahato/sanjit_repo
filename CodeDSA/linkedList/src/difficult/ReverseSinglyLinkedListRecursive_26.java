@@ -1,6 +1,6 @@
 package difficult;
 
-import basics.Node;
+import medium.Node;
 
 public class ReverseSinglyLinkedListRecursive_26 {
 

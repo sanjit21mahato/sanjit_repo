@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
-Description : We are given an Array of n integers, We are given q queries having indices l and r . We have to find out sum between the given range of indices.
+Description : We are given an Array of n integers, We are given q queries having indices l and r.
+We have to find out sum between the given range of indices.
 Input 
 [4, 5, 3, 2, 5]
 3

@@ -22,7 +22,6 @@ public class PrintTransposeOfMatrix_4 {
 	}
 
 	private static void printTransposeOfMatrix(int[][] arr) {
-
 		int r = arr.length;
 		for (int i = 0; i < r; i++) {
 			int c = arr[i].length;

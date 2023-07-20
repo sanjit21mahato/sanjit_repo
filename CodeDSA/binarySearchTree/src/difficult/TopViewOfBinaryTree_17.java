@@ -9,7 +9,7 @@ import java.util.TreeMap;
 class Pair{
     Node node;
     int hd;
-    Pair(Node n,int h)
+    Pair(Node n, int h)
     {
     	node=n;
     	hd=h;

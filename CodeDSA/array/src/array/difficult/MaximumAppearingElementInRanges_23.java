@@ -22,10 +22,10 @@ O/P :5
 public class MaximumAppearingElementInRanges_23 {
 
 	public static void main(String[] args) {
-		//int L[] = {1,2,5,15};
-	    //int R[] = {5,8,7,18};
-		int L[] = {1,2,4};
-		int R[] = {4,5,7};
+		int L[] = {1,2,5,15};
+	    int R[] = {5,8,7,18};
+		//int L[] = {1,2,4};
+		//int R[] = {4,5,7};
 		
 	   
 	    int freq[] = new int[100];

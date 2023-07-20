@@ -7,9 +7,9 @@ after reversing 10--20--30--40
                 
 */
 
-import basics.InsertAtBeginOfDoublyLinkedList_10;
-import basics.Node;
-import basics.SimpleLinkedListImplementation_2;
+import easy.InsertAtBeginOfDoublyLinkedList_10;
+import easy.SimpleLinkedListImplementation_2;
+import medium.Node;
 
 public class ReverseDoublyLinkedList_11 {
 

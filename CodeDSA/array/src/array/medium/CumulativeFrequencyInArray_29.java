@@ -28,11 +28,11 @@ public class CumulativeFrequencyInArray_29 {
 		
 		LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
 		for (int i = 0; i < arr.length; i++) {
-			if (map.containsKey(arr[i])) {
+			//if (map.containsKey(arr[i])) {
 				map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
-			} else {
-				map.put(arr[i], 1);
-			}
+			//} else {
+				//map.put(arr[i], 1);
+			//}
 		}
 		int previousFrequency = 0;
 		for (Integer k : map.keySet()) {

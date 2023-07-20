@@ -5,7 +5,7 @@ Two Solutions:
 	Iterative
 */
 
-import basics.Node;
+import medium.Node;
 
 public class ReverseSinglyLinkedListInGroups_28 {
 
@@ -15,7 +15,8 @@ public class ReverseSinglyLinkedListInGroups_28 {
 		head.next.next = new Node(30);
 		head.next.next.next = new Node(40);
 		head.next.next.next.next = new Node(50);
-		int k = 2;
+		head.next.next.next.next.next = new Node(60);
+		int k = 3;
 		head = reverseInGroupsUsingRecursion(head, k);
 		//head=reverseInGroups(head,k);
 		traverse(head);
@@ -23,6 +24,25 @@ public class ReverseSinglyLinkedListInGroups_28 {
 	}
 
 	private static Node reverseInGroupsUsingRecursion(Node head, int k) {
+		
+		if(head==null)return null;
+		Node pre=null;
+		Node next=null;
+		Node c=head;
+		
+		for(int i=0;i<k;i++){
+			next=c.next;
+			c.next= pre;
+			pre=c;
+			c=next;
+		}
+		if(c!=null){
+			Node headRest = reverseInGroupsUsingRecursion(c,k);
+			head.next=headRest;
+		}
+		return pre;
+		
+		/*
 		if(head==null){
 			return null;
 		}
@@ -42,7 +62,7 @@ public class ReverseSinglyLinkedListInGroups_28 {
 			head.next=headRest;
 		}
 		return previous;
-	}
+	*/}
 
 	/*private static Node reverseInGroups(Node head, int k) {
 

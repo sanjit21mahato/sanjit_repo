@@ -1,6 +1,9 @@
 package array.medium;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /*
  * Input  : a[] = {5,2,6,8,6,7,5,2,8}
@@ -19,12 +22,12 @@ public class RemoveDuplicatesFromUnsortedArray_6 {
      int arr[] = {5,2,6,8,6,7,5,2,8};
      // int arr[] = { 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6 };
      // ArrayList with duplicate elements
-   /*  ArrayList<Integer> numbersList = new ArrayList(Arrays.asList(arr));
+     ArrayList<Integer> numbersList = new ArrayList(Arrays.asList(arr));
      
      List<Integer> list = numbersList.stream().distinct().collect(Collectors.toList());
      for(Integer i :list){
     	 System.out.println(i);
-     }*/
+     }
      //list.forEach(System.out::println);
      //System.out.println();
      

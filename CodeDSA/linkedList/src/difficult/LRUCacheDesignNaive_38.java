@@ -1,11 +1,11 @@
 package difficult;
 
-import basics.Node;
+import medium.Node;
 
 /*
-Cache is memeory which is very clsoe to CPU, has very less access time means it is fast but 
-is small in siz ecompared to RAM. Since cache is very fast we need to have efficient utilization of 
-small size memeory. 
+Cache is memory which is very close to CPU, has very less access time means it is fast but 
+is small in size compared to RAM. Since cache is very fast we need to have efficient utilization of 
+small size memory. 
 LRU is one of the techniques for that purpose. LRU stands for Least Recently Used.
 The concept that LRU uses is called temporal locality, which means the item that accessed now 
 is very likely to be accessed in near future. 
